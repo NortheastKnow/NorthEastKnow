@@ -1,0 +1,98 @@
+/*style for the footer start here*/
+.footer{
+    background-color: rgb(251, 253, 255);
+}
+.footer_row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sub_footer_row{
+    background-color: yellow;
+    padding-top: 2%;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-left: 13%;
+}
+.sub_footer_row a{
+    text-decoration: none;
+    color: black;
+}
+.fa{
+    padding-left: 10%;
+}
+#university{
+    padding-left: 30%;
+}
+#university_text{
+    padding-left: 8%;
+}
+#university_des, #group_des, #book_des, #comment_o_des{
+    margin-top: 70px;
+}
+#group{
+    padding-left: 33%;
+}
+#group_text{
+    text-align: center;
+}
+#book{
+    padding-left: 33%;
+}
+#book_text{
+    text-align: center;
+}
+#comment_o{
+    padding-left: 35%
+}
+#comment_o_text{
+    text-align: center;
+}
+.footer h1, p{
+ text-align: center;
+}
+#footnote{
+    margin-top: 10%;
+    text-align: center;
+}
+.sticky {
+    position: sticky;
+    width: 20px;
+    bottom: 10px;
+  } 
+  .mg{
+      height: 40px;
+    border-radius: 5px;
+    margin-bottom: 4px;
+  }
+/*style for the footer end here*/
+
+/*style for the mainbody*/
+.mainbody{
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+}
+.container_of_main_body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Subrow_of_mainbody{
+    background-color: cadetblue;
+    border-radius: 5px;
+    width: 25%;
+}
+.Subrow_of_mainbody:hover{
+    box-shadow: 4px 3px black;
+    transition: 1s;
+}
+/*style for the mainbody*/
+  @media only screen and (max-width: 1024px) {
+    .mg{
+        margin-top: 5px;
+        width: 80px;
+        height: 70px;
+      }
+  }
