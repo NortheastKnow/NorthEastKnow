@@ -5,14 +5,16 @@
 .footer_row{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .sub_footer_row{
     background-color: yellow;
     padding-top: 2%;
-    width: 170px;
+    width: 200px;
     height: 170px;
     border-radius: 50%;
-    margin-left: 13%;
 }
 .sub_footer_row a{
     text-decoration: none;
@@ -21,11 +23,14 @@
 .fa{
     padding-left: 10%;
 }
+.fa:hover{
+    color: black;
+}
 #university{
-    padding-left: 30%;
+    padding-left: 35%;
 }
 #university_text{
-    padding-left: 8%;
+    padding-left: 16%;
 }
 #university_des, #group_des, #book_des, #comment_o_des{
     margin-top: 70px;
@@ -52,6 +57,11 @@
  text-align: center;
 }
 #footnote{
+    font-size: x-large;
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    color: white;
     text-align: center;
 }
 .sticky {
@@ -64,6 +74,9 @@
     border-radius: 5px;
     margin-bottom: 4px;
   }
+  #foothead{
+    font-size: large;
+  }
 /*style for the footer end here*/
 
 /*style for the mainbody*/
@@ -71,7 +84,7 @@
     margin-top: 0%;
     padding-top: 0%;
     width: 100%;
-    background-color: lightgrey;
+    background-color: #AFEEEE;
     padding-bottom: 4%;
 }
 .mainbody{
@@ -92,13 +105,19 @@
     background-color: cadetblue;
     border-radius: 5px;
     width: 25%;
+    height: fit-content;
 }
 .Subrow_of_mainbody img{
     height: 370px;
 }
+
+.Subrow_of_mainbody h3{
+    padding-left: 4%;
+    text-transform: uppercase;
+}
 .Subrow_of_mainbody:hover{
     box-shadow: 4px 3px black;
-    color: rgb(173, 218, 101);
+    color: black;
     transition: 0.8s;
 }
 /*style for the mainbody*/
@@ -273,6 +292,7 @@
 }
 .relatedpost{
     text-decoration: none;
+    font-style: italic;
     margin-bottom: 0%;
     color: rgba(0, 0, 0, 0.774);
 }
@@ -280,40 +300,52 @@
     color: red;
 }
 /*details page end*/
-  @media only screen and (max-width: 1024px) {
-    /*footer start*/  
-    .mg{
-        border-radius: 6px;
-        margin-top: 5px;
-        width: 60px;
-        height: 70px;
-      }
-      .sub_footer_row{
-          margin-left: 6%;
-      }
-      #university{
-          padding-left: 35%;
-      }
-      #university_text{
-          padding-left: 13%;
-      }
-      #university_des, #group_des, #book_des, #comment_o_des{
-          font-size: x-large;
-      }
-      #footnote{
-          font-size: x-large;
-      }
-      #foothead{
-        font-size: x-large;
-      }
-      /*footer end*/
+/*ONLY FOR THE SUPPORT PAGE START HERE*/
+@media only screen and (max-width: 1485px) {
+    /*support page start*/
+    .small_container2{
+		border-radius: 10px;
+	}
 
+	#medical{
+		background: url("https://www.bing.com/th?id=OIP.dhbOVVUteoVIx-1bU6rm8AHaE8&w=139&h=108&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2");
+		background-size: 100% 250px;
+	}
+    
+	#engineering{
+	  background: url("https://www.bing.com/th?id=OIP.lEedlqh7r4MdzR6PKNRDgwHaEK&w=260&h=137&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2");
+	  background-size: 100% 250px;
+	}
+	
+	#law{
+	  background: url("https://www.bing.com/th?id=OIP.C1khAuDPz2x4ImWcF1D4nQHaFF&w=135&h=88&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2");
+	  background-size: 100% 250px;
+	}
+
+    #medical, #engineering, #law{
+        width: 30%;
+    }
+    
+	#text1, #text2, #text3{
+		font-size: 40px;
+		padding-top: 20%;
+	}
+	
+      /*support page end*/
+}
+/*ONLY FOR THE SUPPORT PAGE END HERE*/
+  @media only screen and (max-width: 1024px) {
+      /*footer media query below*/
       /*mainbody start*/
       .Subrow_of_mainbody{
-          height: 340px;
+          width: 30%;
+          height: fit-content;
       }
       .Subrow_of_mainbody img{
-          height: 300px;
+          height: 200px;
+      }
+      .Subrow_of_mainbody h3 {
+          padding-left: 5px;
       }
       /*mainbody end*/
 
@@ -324,27 +356,27 @@
 
 	.small_container{
 		margin-top: 10%;
-		width: 100%;
+		width: 40%;
 	}
 
 	.aboutimage{
-       width: 180px;
-	   height: 180px;
+       width: 100px;
+	   height: 100px;
 	}
 	.ab{
-		margin-left: 15%;
-		font-size: 100px;
+		margin-left: 12%;
+		font-size: 30px;
 	}
     #team{
 		margin-left: 12%;
-		font-size: 100px;
+		font-size: 30px;
 	}
 	.TEXT{
 		margin-top: 3%;
-		font-size: xx-large;
+		font-size: medium;
 	}
     .person{
-		font-size: x-large;
+		font-size: large;
 	}
       /*about us end*/
 
@@ -354,68 +386,247 @@
 	}
 
 	#medical{
+        margin-left: 18%;
 		height: 250px;
-		width: 100%;
+		width: 60%;
 		background: url("https://www.bing.com/th?id=OIP.dhbOVVUteoVIx-1bU6rm8AHaE8&w=139&h=108&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2");
 		background-size: 100% 250px;
 	}
     
 	#engineering{
-		margin-top: 4%;
+        margin-left: 18%;
+        margin-top: 4%;
 		height: 250px;
-	  width: 100%;
+	  width: 60%;
 	  background: url("https://www.bing.com/th?id=OIP.lEedlqh7r4MdzR6PKNRDgwHaEK&w=260&h=137&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2");
 	  background-size: 100% 250px;
 	}
 	
 	#law{
-		margin-top: 4%;
+        margin-left: 18%;
+        margin-top: 4%;
 		height: 250px;
-	  width: 100%;
+	  width: 60%;
 	  background: url("https://www.bing.com/th?id=OIP.C1khAuDPz2x4ImWcF1D4nQHaFF&w=135&h=88&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2");
 	  background-size: 100% 250px;
 	}
     
 	#text1{
-		font-size: 70px;
-		padding-top: 13%;
+		font-size: 40px;
+		padding-top: 20%;
 	}
 	
 	#text2{
-		font-size: 70px;
-		padding-top: 13%;
+		font-size: 40px;
+		padding-top: 20%;
 	}
 	
 	#text3{
-		font-size: 70px;
-		padding-top: 13%;
+		font-size: 40px;
+		padding-top: 20%;
 	}
       /*support page end*/
 
     /*detail page start*/
     .detailscontainer{
         margin-left: 5%;
-        margin-right: 10%;
-        display: table;
+        margin-right: 5%;
+        display: flex;
+        flex-wrap: wrap;
     }
     .rightSideDetails{
-        width: 100%;
+        width: 65%;
     }
     .leftSideDetails{
         position: sticky;
-        width: 100%;
+        width: 30%;
     }
     .detailsPageHeading{
-        font-size: 70px;
-    }
-    .detailsPageContent{
         font-size: 30px;
     }
+    .detailsPageContent{
+        font-size: medium;
+    }
     .leftSideDetailsHeading{
-        font-size: 55px;
+        font-size: 30px;
     }
     .relatedpost{
-        font-size: 25px;
+        font-size: medium;
     }
     /*detail page end*/
   }
+
+  /*media query for medium and small device start here*/
+  @media screen and (max-width: 1020px){
+    .ab{
+        font-size: 30px;
+    } 
+    .mg{
+        border-radius: 6px;
+        margin-top: 5px;
+        width: 40px;
+        height: 50px;
+      }
+      .sub_footer_row{
+          width: 130px;
+          height: 100px;
+      }
+      #university{
+          padding-left: 30%;
+      }
+      #group{
+          padding-left: 30%;
+      }
+      #book{
+          padding-left: 30%;
+      }
+      #comment_o{
+          padding-left: 30%;
+      }
+      #university_text{
+          padding-left: 25%;
+      }
+      #university_text, #group_text, #book_text, #comment_o_text{
+          font-size: medium;
+      }
+      #university_des, #group_des, #book_des, #comment_o_des{
+          font-size: large;
+      }
+      #footnote{
+          font-size: large;
+      }
+      #foothead{
+        font-size: large;
+      }
+      /*footer end*/
+      /*about us start here*/
+      .small_container{
+		margin-top: 10%;
+		width: 70%;
+	}
+      /*about us start here*/
+}
+
+
+@media only screen and (max-width: 680px) {
+    .TEXT{
+        font-size: 15px;
+    }
+        /*footer start*/ 
+        .ab{
+            font-size: 30px;
+        } 
+        .mg{
+            border-radius: 6px;
+            margin-top: 5px;
+            width: 30px;
+            height: 40px;
+          }
+          .sub_footer_row{
+              width: 80px;
+              height: 100px;
+          }
+          #university{
+              padding-left: 20%;
+          }
+          #group{
+              padding-left: 20%;
+          }
+          #book{
+              padding-left: 20%;
+          }
+          #comment_o{
+              padding-left: 20%;
+          }
+          #university_text{
+              padding-left: 13%;
+          }
+          #university_text, #group_text, #book_text, #comment_o_text{
+              font-size: small;
+          }
+          #university_des, #group_des, #book_des, #comment_o_des{
+              font-size: large;
+          }
+          #footnote{
+              font-size: large;
+          }
+          #foothead{
+            font-size: medium;
+          }
+          /*footer end*/
+
+          /*about us start here*/
+          .small_container{
+            margin-top: 10%;
+            width: 100%;
+        }
+          /*about us ends here*/
+
+          /*detail_page start here*/
+          .detailscontainer{
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .detailsPageContent{
+            font-size: small;
+        }
+        .detailsPageHeading, .leftSideDetailsHeading{
+            font-size: large;
+        }
+        .rightSideDetails{
+            width: 100%;
+        }
+        .leftSideDetails{
+            margin-top: 4%;
+            width: 50%;
+        }
+          /*details page ends here*/
+
+          /*support page start*/
+      .small_container2{
+		border-radius: 10px;
+	}
+
+	#medical{
+        margin-left: 0%;
+		height: 200px;
+		width: 100%;
+		background: url("https://www.bing.com/th?id=OIP.dhbOVVUteoVIx-1bU6rm8AHaE8&w=139&h=108&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2");
+		background-size: 100% 250px;
+	}
+    
+	#engineering{
+        margin-left: 0%;
+        margin-top: 2%;
+		height: 200px;
+	  width: 100%;
+	  background: url("https://www.bing.com/th?id=OIP.lEedlqh7r4MdzR6PKNRDgwHaEK&w=260&h=137&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2");
+	  background-size: 100% 250px;
+	}
+	
+	#law{
+        margin-left: 0%;
+        margin-top: 2%;
+		height: 200px;
+	  width: 100%;
+	  background: url("https://www.bing.com/th?id=OIP.C1khAuDPz2x4ImWcF1D4nQHaFF&w=135&h=88&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2");
+	  background-size: 100% 250px;
+	}
+    
+	#text1{
+		font-size: 40px;
+		padding-top: 20%;
+	}
+	
+	#text2{
+		font-size: 40px;
+		padding-top: 20%;
+	}
+	
+	#text3{
+		font-size: 40px;
+		padding-top: 20%;
+	}
+      /*support page end*/
+}
+  /*media query for medium and small device ends here*/
